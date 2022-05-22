@@ -1,6 +1,11 @@
 # WeatherApp
 Weather app using openweathermap api, show 5 days weather forecast data with 3-hour step.
 
+<img src="/Screenshots/1.png" alt="" width="256" height="554" hspace="10"/> <img src="/Screenshots/2.png" alt="" width="256" height="554" hspace="10"/>
+<img src="/Screenshots/3.png" alt="" width="256" height="554" hspace="10"/> <img src="/Screenshots/4.png" alt="" width="256" height="554" hspace="10"/> 
+<img src="/Screenshots/5.png" alt="" width="256" height="554" hspace="10"/> 
+
+
  OpenWeather Documentation: https://openweathermap.org/forecast5 
  
 - Used OpenWeather API: "https://api.openweathermap.org/data/2.5/forecast?lat=\(lat)&lon=\(long)&appid=553626bed26b25f56af0d6fa3890d1c5&units=Metric"
