@@ -1,0 +1,49 @@
+disabled_rules:
+    - trailing_whitespace
+    - vertical_whitespace
+    - switch_case_alignment
+    - trailing_newline
+    - force_cast
+    - void_return
+    - empty_parentheses_with_trailing_closure
+    
+excluded:
+  - Pods
+
+#force_cast: warning
+force_try:
+  severity: warning
+colon:
+  apply_to_dictionaries: false
+
+indentation: 2
+line_length: 150
+function_body_length: 80
+
+identifier_name:
+  allowed_symbols: "_"
+  min_length: 2
+  max_length:
+    warning: 90
+    error: 1000
+  excluded:
+    - id
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+  
+opt_in_rules: # some rules are turned off by default, so you need to opt-in
+  - empty_count
+  
+custom_rules:
+  no_objcMembers:
+    name: "@objcMembers"
+    regex: "@objcMembers"
+    message: "Explicitly use @objc on each member you want to expose to Objective-C"
+    severity: error
+  no_direct_standard_out_logs:
+    name: "Writing log messages directly to standard out is disallowed"
+    match_kinds:
+    - identifier
+    message: "Don't commit `print(…)`, `debugPrint(…)`, or `dump(…)` as they write to standard out in release. Either log to a dedicated logging system or silence this warning in debug-only scenarios explicitly using `// swiftlint:disable:next no_direct_standard_out_logs`"
+    severity: warning

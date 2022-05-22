@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-Qj-HyG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.041835908820000003" green="0.65623531310000005" blue="0.64016513549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1Bx-s8-8gj">
+                                <rect key="frame" x="157" y="312.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="55H-gj-Dc2"/>
+                                    <constraint firstAttribute="height" constant="100" id="XJe-HZ-x0f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="040-ke-OJb">
+                                <rect key="frame" x="112.5" y="422.5" width="189.5" height="51"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0Sf-Qj-HyG" secondAttribute="bottom" id="8Na-YY-tf8"/>
+                            <constraint firstItem="040-ke-OJb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="HdJ-Nc-KAZ"/>
+                            <constraint firstItem="040-ke-OJb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RkC-cv-OVx"/>
+                            <constraint firstItem="1Bx-s8-8gj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iN9-3e-B1w"/>
+                            <constraint firstItem="040-ke-OJb" firstAttribute="top" secondItem="1Bx-s8-8gj" secondAttribute="bottom" constant="10" id="n3f-fT-emT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Sf-Qj-HyG" secondAttribute="trailing" id="ojL-F6-WDr"/>
+                            <constraint firstItem="0Sf-Qj-HyG" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rxm-Nt-cS7"/>
+                            <constraint firstItem="0Sf-Qj-HyG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yE1-05-nXp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudIcon" width="512" height="512"/>
+        <image name="splash" width="473" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
