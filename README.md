@@ -1,7 +1,14 @@
 # WeatherApp
-Weather app using openweathermap api, show 5 days data.
+Weather app using openweathermap api, show 5 days weather forecast data with 3-hour step.
 
-- Used OpenWeather API: https://openweathermap.org/forecast5 
+ OpenWeather Documentation: https://openweathermap.org/forecast5 
+ 
+- Used OpenWeather API: "https://api.openweathermap.org/data/2.5/forecast?lat=\(lat)&lon=\(long)&appid=553626bed26b25f56af0d6fa3890d1c5&units=Metric"
+        
+        - lat: latitute
+        - long: longitute
+        - appid: {API key}
+        - units: Units for temperature measurement(standard, metric, and imperial).
 
 - Fetch 5 days weather information from api. (Default used **Belgrade, Serbia** location)
 
