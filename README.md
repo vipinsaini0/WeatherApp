@@ -34,7 +34,9 @@ Weather app using openweathermap api, show 5 days weather forecast data with 3-h
 - Added JSON file in project for fixed data.
 
 - Used 3rd party frameworks
-    - Alamofire: For APIs call
-    - SDWebImage: Fetch images from api
-    - SwiftLint: For Code Structure setup
+    - **Alamofire**: For APIs call
+    - **SDWebImage**: Fetch images from api
+    - **SwiftLint**: For Code Structure setup
+
+- Used **MVVM** Design Pattern
 
