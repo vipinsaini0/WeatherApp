@@ -40,6 +40,7 @@ class WeatherViewModel {
         return cellViewModels.count
     }
     
+    // Void closure
     var reloadTableViewClosure: (() -> ())?
     var showAlertClosure: (() -> () )?
     var updateLoadingStatus: (() -> ())?
@@ -80,6 +81,7 @@ class WeatherViewModel {
     }
     
     // MARK: - Fetch Offline Data
+    
     func initFetchOfflineWeather() {
         self.isLoading = true
         apiService.fetchOfflineWeather { [weak self] (success, results, error) in
@@ -173,11 +175,4 @@ struct WeatherListCellViewModel: Equatable {
     let dtTxt: String?
     let rain: WeatherRain?
 }
-
-struct WeatherCityViewModel {
-    let id: Int?
-    let name: String?
-    let coord: WeatherCoord?
-    let country: String?
-    let population, timezone, sunrise, sunset: Int?
-}
+ 
